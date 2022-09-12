@@ -1,7 +1,7 @@
 const { readFile, writeFile } = require('../utils/fileHandler');
 const uuid = require('uuid').v4;
 
-const jsonDBPath = "./src/database/";
+const jsonDBPath = "./src/database/";  // First commit
 
 const getAllTasks = async () => readFile(`${jsonDBPath}tasks.json`)
   .then((file)=> JSON.parse(file))
